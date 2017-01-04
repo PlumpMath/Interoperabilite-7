@@ -67,7 +67,7 @@ public class LdapManager {
 			return itemExport(userAnswer, isDebug);
 
 		} catch (NamingException e) {
-			System.err.println("Problème de connexion");
+			System.err.println("Problï¿½me de connexion");
 			e.printStackTrace();
 		} finally {
 			try {
@@ -102,7 +102,7 @@ public class LdapManager {
 			}
 
 		} catch (NamingException e) {
-			System.err.println("Problème de connexion");
+			System.err.println("Problï¿½me de connexion");
 			e.printStackTrace();
 		}
 
@@ -126,7 +126,7 @@ public class LdapManager {
 				}
 			}
 		} catch (NamingException e) {
-			System.err.println("Problème de connexion");
+			System.err.println("Problï¿½me de connexion");
 			e.printStackTrace();
 		}
 	}
@@ -144,7 +144,7 @@ public class LdapManager {
 			if (attrs != null) {
 				LdapItem item = new LdapItem();
 				try {
-					// Récupération des attributs
+					// Rï¿½cupï¿½ration des attributs
 
 					for (NamingEnumeration ae = attrs.getAll(); ae.hasMore();) {
 						Attribute attr = (Attribute) ae.next();
@@ -377,7 +377,7 @@ public class LdapManager {
 					}
 
 				} catch (NamingException e) {
-					System.err.println("Défaut : " + e);
+					System.err.println("Dï¿½faut : " + e);
 					e.printStackTrace();
 				}
 				toReturn.add(item);
