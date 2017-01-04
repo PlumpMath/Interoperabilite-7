@@ -1,9 +1,9 @@
-package interoperabilite.ldap.manager;
+package submodule_1.interoperabilite.ldap.manager;
 
-import interoperabilite.ldap.entities.LdapConfiguration;
-import interoperabilite.ldap.entities.LdapItem;
-import interoperabilite.ldap.entities.imie.Promotion;
-import interoperabilite.ldap.entities.imie.User;
+import submodule_1.interoperabilite.ldap.entities.LdapConfiguration;
+import submodule_1.interoperabilite.ldap.entities.LdapItem;
+import submodule_1.interoperabilite.ldap.entities.imie.Promotion;
+import submodule_1.interoperabilite.ldap.entities.imie.User;
 
 import java.util.ArrayList;
 import java.util.Hashtable;

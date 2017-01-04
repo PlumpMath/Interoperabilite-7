@@ -1,4 +1,4 @@
-package interoperabilite.cour;
+package submodule_1.interoperabilite.cour;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,9 +8,9 @@ import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
-import interoperabilite.cour.User.Gender;
-import interoperabilite.cour.User.Name;
-import interoperabilite.json.manager.JsonManager;
+import submodule_1.interoperabilite.cour.User.Gender;
+import submodule_1.interoperabilite.cour.User.Name;
+import submodule_1.interoperabilite.json.manager.JsonManager;
 
 public class Main {
 

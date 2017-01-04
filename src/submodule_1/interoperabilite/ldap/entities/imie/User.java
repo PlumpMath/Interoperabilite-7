@@ -1,4 +1,4 @@
-package interoperabilite.ldap.entities.imie;
+package submodule_1.interoperabilite.ldap.entities.imie;
 
 public class User {
 	private int id;

@@ -1,10 +1,10 @@
-package interoperabilite.json;
+package submodule_1.interoperabilite.json;
 
 import java.util.ArrayList;
 import java.util.Date;
-import interoperabilite.json.entities.Document;
-import interoperabilite.json.entities.User;
-import interoperabilite.json.manager.JsonManager;
+import submodule_1.interoperabilite.json.entities.Document;
+import submodule_1.interoperabilite.json.entities.User;
+import submodule_1.interoperabilite.json.manager.JsonManager;
 
 public class Main {
 

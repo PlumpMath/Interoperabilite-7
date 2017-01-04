@@ -1,4 +1,4 @@
-package interoperabilite.cour;
+package submodule_1.interoperabilite.cour;
 
 import java.util.ArrayList;
 

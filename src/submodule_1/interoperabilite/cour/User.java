@@ -1,4 +1,4 @@
-package interoperabilite.cour;
+package submodule_1.interoperabilite.cour;
 
 public class User {
 	public enum Gender {

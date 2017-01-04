@@ -1,4 +1,4 @@
-package interoperabilite.json.entities;
+package submodule_1.interoperabilite.json.entities;
 
 import java.io.IOException;
 import java.util.ArrayList;

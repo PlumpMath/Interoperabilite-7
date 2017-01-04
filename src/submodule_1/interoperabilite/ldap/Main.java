@@ -1,12 +1,12 @@
-package interoperabilite.ldap;
+package submodule_1.interoperabilite.ldap;
 
 import java.util.ArrayList;
 
-import interoperabilite.json.manager.JsonManager;
-import interoperabilite.ldap.entities.LdapItem;
-import interoperabilite.ldap.entities.imie.Promotion;
-import interoperabilite.ldap.entities.imie.User;
-import interoperabilite.ldap.manager.LdapManager;
+import submodule_1.interoperabilite.json.manager.JsonManager;
+import submodule_1.interoperabilite.ldap.entities.LdapItem;
+import submodule_1.interoperabilite.ldap.entities.imie.Promotion;
+import submodule_1.interoperabilite.ldap.entities.imie.User;
+import submodule_1.interoperabilite.ldap.manager.LdapManager;
 
 public class Main {
 	public static void main(String[] args) {

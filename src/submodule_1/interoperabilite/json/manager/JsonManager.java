@@ -1,4 +1,4 @@
-package interoperabilite.json.manager;
+package submodule_1.interoperabilite.json.manager;
 
 import java.io.BufferedWriter;
 import java.io.File;

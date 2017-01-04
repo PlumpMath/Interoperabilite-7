@@ -1,4 +1,4 @@
-package interoperabilite.ldap.entities;
+package submodule_1.interoperabilite.ldap.entities;
 
 import java.util.ArrayList;
 
