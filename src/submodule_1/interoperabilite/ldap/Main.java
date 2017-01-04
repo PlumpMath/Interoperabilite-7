@@ -67,6 +67,9 @@ public class Main {
 		for(Teacher teacher : teachers){
 		    System.out.println("=>"  + teacher.getFirstname() + " " + teacher.getLastname());
 		}
+
+		submodule_1.interoperabilite.json.Main.importData(teachers, "Teachers.json", "/json/");
+
 	}
 
 }
