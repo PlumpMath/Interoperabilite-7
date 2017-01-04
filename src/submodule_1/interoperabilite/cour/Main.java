@@ -1,15 +1,8 @@
 package submodule_1.interoperabilite.cour;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-
 import submodule_1.interoperabilite.cour.User.Gender;
-import submodule_1.interoperabilite.cour.User.Name;
 import submodule_1.interoperabilite.json.manager.JsonManager;
 
 public class Main {

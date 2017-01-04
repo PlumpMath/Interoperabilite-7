@@ -7,7 +7,7 @@ public class Promotion {
 	private String years;
 	private String name;
 	private String ou;
-	private ArrayList<User> users;
+	private ArrayList<Student> users;
 
 	public int getId() {
 		return id;
@@ -33,11 +33,11 @@ public class Promotion {
 		this.name = name;
 	}
 
-	public ArrayList<User> getUsers() {
+	public ArrayList<Student> getUsers() {
 		return users;
 	}
 
-	public void setUsers(ArrayList<User> users) {
+	public void setUsers(ArrayList<Student> users) {
 		this.users = users;
 	}
 
@@ -54,7 +54,7 @@ public class Promotion {
 		this.id = id;
 		this.years = years;
 		this.name = name;
-		this.users = new ArrayList<User>();
+		this.users = new ArrayList<Student>();
 	}
 
 	public Promotion() {
