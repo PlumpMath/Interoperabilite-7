@@ -67,11 +67,25 @@ public class Main {
 			System.out.println("////////////////");
 			System.out.println(user.toString());
 			System.out.println("////////////////");
-			System.out
-					.println(JsonManager.getInstance().addItem(user).toJSON());
+			System.out.println(JsonManager.getInstance().addItem(user).toJSON());
 			System.out.println("////////////////");
 		}
 
 		JsonManager.getInstance().sendToFile();
+	}
+	
+	public static <T> void exportData(ArrayList<T> myList) {
+		JsonManager.getInstance().clear().addItems(myList);
+		JsonManager.getInstance().sendToFile();
+		String extracteds = JsonManager.getInstance().toJSON();
+		System.out.println("////////////////");
+		System.out.println(extracteds);
+		System.out.println("////////////////");
+	}
+	
+	public static <T> ArrayList<T> importData(String filename, String path,
+			Class<?> elem) {
+		JsonManager.getInstance().clear();
+		return JsonManager.getInstance().readFromFile(filename, path, elem);
 	}
 }
