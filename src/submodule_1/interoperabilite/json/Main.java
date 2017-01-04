@@ -74,16 +74,16 @@ public class Main {
 		JsonManager.getInstance().sendToFile();
 	}
 	
-	public static <T> void exportData(ArrayList<T> myList) {
+	public static <T> void importData(ArrayList<T> myList, String filename, String path) {
 		JsonManager.getInstance().clear().addItems(myList);
-		JsonManager.getInstance().sendToFile();
+		JsonManager.getInstance().sendToFile(filename, path);
 		String extracteds = JsonManager.getInstance().toJSON();
 		System.out.println("////////////////");
 		System.out.println(extracteds);
 		System.out.println("////////////////");
 	}
 	
-	public static <T> ArrayList<T> importData(String filename, String path,
+	public static <T> ArrayList<T> exportData(String filename, String path,
 			Class<?> elem) {
 		JsonManager.getInstance().clear();
 		return JsonManager.getInstance().readFromFile(filename, path, elem);
