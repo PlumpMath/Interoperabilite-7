@@ -36,32 +36,32 @@ public class Main {
 
 		//LdapManager.getInstance().requestInspector("OU=Sites", true);
 		
-//		ArrayList<Promotion> items2 = LdapManager.getInstance().getAllPromotions("RENNES");
-//
-//		for (Promotion promotion : items2) {
-//			System.out.println(promotion.getName() + " : " + promotion.getYears() + " : " + promotion.getOu());
-//			LdapManager.getInstance().getStudentsByPromotion(promotion);
-//			for (User user : promotion.getUsers()) {
-//				System.out.println(user.getFirstname() +" : "+ user.getGuid());
-//			}
-//		}
-//
-//
+		ArrayList<Promotion> items2 = LdapManager.getInstance().getAllPromotions("RENNES");
+
+		for (Promotion promotion : items2) {
+			System.out.println(promotion.getName() + " : " + promotion.getYears() + " : " + promotion.getOu());
+			LdapManager.getInstance().getStudentsByPromotion(promotion);
+			for (User user : promotion.getUsers()) {
+				System.out.println(user.getFirstname() +" : "+ user.getGuid());
+			}
+		}
 //
 //
-//		ArrayList<Promotion> promos = LdapManager.getInstance().getAllPromotions("RENNES");
-//		ArrayList<Student> users = LdapManager.getInstance().getStudentsByPromotion(promos.get(1));
-//		LdapManager.getInstance().getStudentsByPromotion(promos.get(2));
-//		LdapManager.getInstance().getStudentsByPromotion(promos.get(3));
-//		LdapManager.getInstance().getStudentsByPromotion(promos.get(4));
-//		LdapManager.getInstance().getStudentsByPromotion(promos.get(5));
 //
-//		for (Promotion promotion : promos) {
-//			System.out.println(promotion.getName() + " : " + promotion.getYears());
-//			for (User user : promotion.getUsers()) {
-//				System.out.println("  =>  " + user.getFirstname());
-//			}
-//		}
+//
+		ArrayList<Promotion> promos = LdapManager.getInstance().getAllPromotions("RENNES");
+		ArrayList<Student> users = LdapManager.getInstance().getStudentsByPromotion(promos.get(1));
+		LdapManager.getInstance().getStudentsByPromotion(promos.get(2));
+		LdapManager.getInstance().getStudentsByPromotion(promos.get(3));
+		LdapManager.getInstance().getStudentsByPromotion(promos.get(4));
+		LdapManager.getInstance().getStudentsByPromotion(promos.get(5));
+
+		for (Promotion promotion : promos) {
+			System.out.println(promotion.getName() + " : " + promotion.getYears());
+			for (User user : promotion.getUsers()) {
+				System.out.println("  =>  " + user.getFirstname());
+			}
+		}
 		
 		ArrayList<Teacher> teachers = LdapManager.getInstance().getAllTeachers("RENNES");
 		for(Teacher teacher : teachers){
@@ -69,7 +69,7 @@ public class Main {
 		}
 
 		submodule_1.interoperabilite.json.Main.importData(teachers, "Teachers.json", "/json/");
-
+		submodule_1.interoperabilite.json.Main.importData(promos, "Promos.json", "/json/");
 	}
 
 }
